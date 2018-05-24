@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:src="@drawable/aditya_logo"
+            android:layout_gravity="center" />
+        <TextView
+            android:id="@+id/textViewLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your registration number"
+            android:textSize="20sp"
+            android:layout_gravity="center"/>
+        <EditText
+            android:id="@+id/editTextUser"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:background="@drawable/edittext_box"
+            android:hint="Registration number"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="35dp"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_gravity="center" />
+        <Button
+            android:id="@+id/buttonregister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Register"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_background"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#385328"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="120dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewMade"
+            android:text="Made with "
+            android:textColor="@android:color/white"
+            android:textSize="18dp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/love"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" by"
+            android:textColor="@android:color/white"
+            android:id="@+id/textViewby"
+            android:textSize="18dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/thub"/>
+    </LinearLayout>
+</RelativeLayout>
